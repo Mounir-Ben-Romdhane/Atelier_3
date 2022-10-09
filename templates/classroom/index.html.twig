@@ -1,0 +1,29 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello ClassroomController!{% endblock %}
+
+{% block body %}
+
+<div class="example-wrapper">
+    <h1>Hello ! ✅</h1>
+
+    <table class="table" border="3" align="center">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            {% for classroom in classrooms %}
+                <tr>
+                    <td>  {{ classroom.Id }} </td>
+                    <td>  {{ classroom.Name }} </td>
+                </tr>
+            {% endfor %}
+        </tr>
+    </tbody>
+</table>
+</div>
+{% endblock %}

@@ -1,0 +1,3 @@
+#index:
+#    path: /
+#    controller: App\Controller\ClubController::index
